@@ -227,8 +227,16 @@ export default function App() {
     }
   };
 
+  useEffect(() => {
+    console.log('[DEBUG] App mounted. isAuthenticated=', isAuthenticated);
+  }, []);
+  useEffect(() => {
+    console.log('[DEBUG] Auth state changed. isAuthenticated=', isAuthenticated);
+  }, [isAuthenticated]);
+
   // Login Screen
   if (!isAuthenticated) {
+    console.log('[DEBUG] Rendering login screen');
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl p-8 space-y-8">
