@@ -1,0 +1,5 @@
+{
+  "name": "Medeo 视频生成器",
+  "description": "基于 Medeo One2x AI API 的 React 视频生成应用，支持提示词配置、状态追踪和视频预览。",
+  "requestFramePermissions": []
+}
